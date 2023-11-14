@@ -5,10 +5,10 @@ public class NewsFeed {
 	
 	private ArrayList<MessagePost> messages;
 	private ArrayList<PhotoPost> photos;
-	
+	private ArrayList<EventPost> events;
 	
 	public NewsFeed() {
-		
+		events = new ArrayList<>();
 		messages = new ArrayList<>();
 		photos = new ArrayList<>();
 	}
@@ -21,7 +21,12 @@ public class NewsFeed {
 	public void addPhotoPost(PhotoPost photo) {
 		photos.add(photo);
 	}
-	
+
+	public void addEventPost(EventPost event)
+	{
+		events.add(event);
+	}
+
 	public void show() {
 		
 		for(MessagePost message : messages) {
@@ -33,7 +38,11 @@ public class NewsFeed {
 			photo.display();
 			System.out.println();
 		}
-		
+
+		for(EventPost event : events) {
+			event.display();
+			System.out.println();
+		}
 	}
 
 }
