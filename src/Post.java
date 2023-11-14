@@ -4,13 +4,13 @@ public class Post {
     private String username;
     private long timestamp;
     private int likes;
-    private ArrayList<String> comments;
+    private ArrayList<Comment> comments;
 
     public Post(String username) {
         this.username = username;
         timestamp = System.currentTimeMillis();
         likes = 0;
-        comments = new ArrayList<>();
+        comments = new ArrayList<Comment>();
     }
 
     public void like() {
@@ -24,10 +24,13 @@ public class Post {
         }
     }
 
-    public void addComments(String text) {
-        comments.add(text);
+    public void addComment(Comment comment) {
+        comments.add(comment);
     }
 
+    public ArrayList<Comment> getComments() {
+        return comments;
+    }
 
     public long getTimeStamp() {
         return timestamp;

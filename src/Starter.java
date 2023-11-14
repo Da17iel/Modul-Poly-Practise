@@ -10,6 +10,10 @@ public class Starter {
 		post1.like();
 		post1.like();
 
+		post1.addComment(new Comment("daniel", "this is sick"));
+		post1.addComment(new Comment("lorin", "bestes projekt!!!"));
+		post1.addComment(new Comment("robin", "Das ist soo cool"));
+
 		news.addPost(post1);
 		news.show();
 	}
