@@ -65,3 +65,12 @@ So könnte er beispielsweise einfach eine Post Klasse erstellen und dann einfach
 <br><br>
 Ebenfalls stimmt es, dass man anstatt ein ```ArrayList<String>``` lieber ein ```ArrayList<Comment>``` benutzten sollte. Das setzt aber voraus, dass eine Comment Klasse vorhanden sein muss. <br>
 Dies hat mehrere Vorteile. Zum Beispiel, dass man Attribute wie Author, Message, CreationDate oder UpdateDate zu dem Comment hinzufügen kann. Dies macht dann die ganze App sehr viel mehr Scaleable.<br>
+
+## Zweiter Auftrag
+Der zweite Auftrag hatte sehr viel mehr mit programmieren zu tun. <br>
+Um jetzt alles hier zu dokumentierne fehlt mir die Zeit. Darum werde ich es mithilfe einer Liste auflisten.
+- Ich habe bei jeder Klasse ein extends Post hinzugefügt. 
+- Bei jedem Konstructor der Child Klassen eine Super reference hinzugefügt. 
+- Mir fehlt leider die Zeit, den rest kann man an dem Code erkennen
+
+Ich weiss dass der Code sehr viel weniger Lange und übersichtlich wurde. 

@@ -9,11 +9,9 @@ public class Starter {
 		MessagePost post1 = new MessagePost("john", "Had a great day up in Zermatt!");
 		post1.like();
 		post1.like();
-		
-		news.addMessagePost(post1);
-		news.show();
-		
 
+		news.addPost(post1);
+		news.show();
 	}
 
 }
